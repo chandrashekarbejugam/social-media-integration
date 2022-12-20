@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/personl"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/logintxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personl"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Signin With :"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:id="@+id/googlelogo"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/logintxt"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/google_logo"
+        android:layout_marginLeft="65dp"/>
+    <ImageView
+        android:id="@+id/facebooklogo"
+        android:layout_width="1000dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/logintxt"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/googlelogo"
+        android:src="@drawable/fb_logo"
+        android:layout_marginLeft="30dp"/>
+
+
+
+
+</RelativeLayout>
